@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homer's Web Page - The Simpsons (Season 12, Ep. 6)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍩</text></svg>">
+</head>
+<body>
+
+  <!-- Windows 98 / Netscape 4.0 Desktop Browser Window -->
+  <div class="retro-window">
+    <!-- Window Titlebar -->
+    <div class="window-titlebar">
+      <div class="titlebar-left">
+        <span class="window-icon">🌐</span>
+        <span class="window-title-text" id="windowTitle">Netscape Communicator - [Homer's Web Page]</span>
+      </div>
+      <div class="titlebar-controls">
+        <button class="win-btn" title="Minimizar">_</button>
+        <button class="win-btn" title="Maximizar">□</button>
+        <button class="win-btn close" title="Cerrar">✕</button>
+      </div>
+    </div>
+
+    <!-- Browser Menu Bar -->
+    <div class="browser-menu">
+      <span><u>F</u>ile</span>
+      <span><u>E</u>dit</span>
+      <span><u>V</u>iew</span>
+      <span><u>G</u>o</span>
+      <span><u>B</u>ookmarks</span>
+      <span><u>O</u>ptions</span>
+      <span><u>D</u>irectory</span>
+      <span><u>H</u>elp</span>
+    </div>
+
+    <!-- Browser Toolbar -->
+    <div class="browser-toolbar">
+      <button class="tool-btn" id="btnBack">⬅️ <span>Atrás</span></button>
+      <button class="tool-btn" id="btnForward">➡️ <span>Adelante</span></button>
+      <button class="tool-btn" id="btnReload">🔄 <span>Recargar</span></button>
+      <button class="tool-btn" id="btnHome">🏠 <span>Inicio</span></button>
+      <button class="tool-btn" id="btnPrint">🖨️ <span>Imprimir</span></button>
+      <button class="tool-btn highlight" id="btnSoundChaos">📢 <span id="soundBtnText">¡ACTIVAR SONIDOS!</span></button>
+      <div class="netscape-n-logo" id="netscapeLogo">
+        <div class="n-symbol">N</div>
+        <div class="shooting-stars">✨</div>
+      </div>
+    </div>
+
+    <!-- Location / Address Bar -->
+    <div class="browser-address-bar">
+      <span class="address-label"><u>L</u>ocation:</span>
+      <input type="text" id="addressInput" class="address-input" value="http://www.springfield.net/~homersimpson/" readonly>
+      <button class="site-toggle-btn" id="btnSwitchSite">🕵️ Ir a Mr. X</button>
+    </div>
+
+    <!-- Page Content Container -->
+    <div class="browser-content" id="browserViewport">
+
+      <!-- ============================================== -->
+      <!-- SECTION 1: HOMER'S ORIGINAL WEB PAGE (GIF CHAOS) -->
+      <!-- ============================================== -->
+      <div id="homerPage" class="active-page homer-theme">
+        
+        <!-- Marquee Announcement -->
+        <div class="retro-marquee-container">
+          <marquee behavior="scroll" direction="left" scrollamount="6" class="retro-marquee">
+            ⭐ ¡¡¡BIENVENIDOS A LA PÁGINA WEB DE HOMER SIMPSON!!! ⭐ "CREERÍAS QUE TODOS LOS RUIDOS MOLESTAN, PERO NO" ⭐ ¡MEJOR SITIO DE LA RED 2000! ⭐ OOH, UN JESÚS BAILARÍN ⭐
+          </marquee>
+        </div>
+
+        <!-- Flying Toasters Layer (Cross-screen animations) -->
+        <div class="flying-toasters-container" id="toasterSpawner">
+          <div class="flying-toaster t1">
+            <div class="toaster-body">
+              <div class="toast-slice">🍞</div>
+              <div class="toaster-box">⚙️</div>
+            </div>
+            <div class="toaster-wing wing-left">🪽</div>
+            <div class="toaster-wing wing-right">🪽</div>
+          </div>
+          <div class="flying-toaster t2">
+            <div class="toaster-body">
+              <div class="toast-slice">🍞</div>
+              <div class="toaster-box">⚙️</div>
+            </div>
+            <div class="toaster-wing wing-left">🪽</div>
+            <div class="toaster-wing wing-right">🪽</div>
+          </div>
+        </div>
+
+        <!-- Header Title Banner (3D WordArt Style) -->
+        <header class="homer-header">
+          <div class="fire-border top-fire"></div>
+          
+          <div class="header-titles">
+            <div class="gif-badge flash">💥 ¡NUEVO! 💥</div>
+            <h1 class="wordart-title">WELCOME TO HOMER'S WEB PAGE</h1>
+            <div class="gif-badge blink">🔥 ¡¡LO MÁS HOT DE INTERNET!! 🔥</div>
+          </div>
+
+          <div class="quote-box">
+            <span class="homer-avatar-icon">🍩</span>
+            <em>"Lisa, ¿quieres ver mi página web?... Creerías que todos estos ruidos serían molestos, ¡pero no!"</em>
+            <button class="sound-chip-btn" id="btnHomerLaugh">🔊 ¡Risa de Homer!</button>
+          </div>
+
+          <div class="fire-border bottom-fire"></div>
+        </header>
+
+        <!-- Main Chaos Grid (GIFs, Widgets, Elements) -->
+        <main class="homer-grid">
+
+          <!-- Left Column: Bells, Construction, Skulls -->
+          <aside class="grid-col col-left">
+            
+            <!-- Ringing Bells Card -->
+            <div class="retro-card">
+              <div class="card-header rainbow-bg">CAMPANAS DE LA IGLESIA</div>
+              <div class="bell-animation-box" id="bellBox" title="¡Haz clic para hacer sonar la campana!">
+                <div class="ringing-bell">🔔</div>
+                <div class="ringing-bell bell-alt">🔔</div>
+                <div class="sound-waves">((( DING DONG )))</div>
+              </div>
+            </div>
+
+            <!-- Flaming Skull Card -->
+            <div class="retro-card skull-card">
+              <div class="card-header flame-bg">CALAVERA EN LLAMAS 3D</div>
+              <div class="skull-box">
+                <div class="fire-effect">🔥</div>
+                <div class="spinning-skull">💀</div>
+                <div class="fire-effect">🔥</div>
+              </div>
+              <p class="blink red-text">¡¡EXTREMO!!</p>
+            </div>
+
+            <!-- Under Construction Card -->
+            <div class="retro-card construction-card">
+              <div class="construction-hazard"></div>
+              <div class="jackhammer-worker">
+                <div class="worker-avatar">👷‍♂️</div>
+                <div class="jackhammer">💥⛏️</div>
+              </div>
+              <div class="construction-text blink">
+                ⚠️ SITIO EN CONSTRUCCIÓN PERMANENTE ⚠️
+              </div>
+              <div class="construction-hazard"></div>
+            </div>
+
+          </aside>
+
+          <!-- Center Column: The Dancing Jesus & Homer's Masterpiece -->
+          <section class="grid-col col-center">
+
+            <!-- Centerpiece: THE DANCING JESUS -->
+            <div class="retro-card jesus-showcase" id="jesusCard">
+              <div class="card-header gold-bg">
+                ✨ EL DANCING JESUS ORIGINAL ✨
+              </div>
+              <div class="jesus-subheader">
+                <em>"¡Ooh, un Jesús que baila! Si hay un mejor uso para Internet, aún no lo he encontrado."</em>
+              </div>
+
+              <!-- Animated Dancing Jesus Graphic -->
+              <div class="dancing-jesus-stage" id="jesusStage" title="¡Haz clic en Jesús para animarlo más rápido!">
+                <div class="disco-lights">
+                  <span class="disco-spot s1"></span>
+                  <span class="disco-spot s2"></span>
+                  <span class="disco-spot s3"></span>
+                </div>
+                
+                <div class="jesus-figure">
+                  <div class="jesus-halo">💫</div>
+                  <div class="jesus-head">
+                    <div class="jesus-hair"></div>
+                    <div class="jesus-face">🧔</div>
+                  </div>
+                  <div class="jesus-body-robe">
+                    <div class="jesus-sash"></div>
+                    <div class="jesus-arm left-arm">✋</div>
+                    <div class="jesus-arm right-arm">🤚</div>
+                  </div>
+                  <div class="jesus-feet">
+                    <span class="foot foot-left">👞</span>
+                    <span class="foot foot-right">👞</span>
+                  </div>
+                </div>
+
+                <div class="dance-floor-grid"></div>
+              </div>
+
+              <div class="jesus-controls">
+                <button class="fun-btn" id="btnHallelujah">🎶 ¡¡MILAGRO DISCO!!</button>
+                <button class="fun-btn" id="btnSpawnToaster">🍞 ¡Lanzar Tostadoras!</button>
+              </div>
+              <p class="copyright-disclaimer">
+                (Robado sin permiso de <u>DancingJesus.com</u> para uso exclusivo de Homer)
+              </p>
+            </div>
+
+            <!-- Soundboard of Horrors -->
+            <div class="retro-card sound-sampler-card">
+              <div class="card-header neon-green-bg">🔊 CONSOLA DE EFECTOS MOLESTOS DE HOMER</div>
+              <p class="card-sub">Haz clic para experimentar la sinfonía multimedia:</p>
+              <div class="sound-button-cluster">
+                <button class="sound-fx-btn" data-sound="siren">🚨 Sirena Policial</button>
+                <button class="sound-fx-btn" data-sound="bell">🔔 Campanada</button>
+                <button class="sound-fx-btn" data-sound="boing">🌀 Boing Elástico</button>
+                <button class="sound-fx-btn" data-sound="whistle">🎺 Silbato Caída</button>
+                <button class="sound-fx-btn" data-sound="flush">🚽 Retrete Nuclear</button>
+                <button class="sound-fx-btn" data-sound="doh">💥 ¡¡D'OH!!</button>
+                <button class="sound-fx-btn" data-sound="burp">🍺 Eructo Duff</button>
+                <button class="sound-fx-btn" data-sound="cheer">🎉 ¡Yaaaaay!</button>
+              </div>
+            </div>
+
+            <!-- Homer's Personal Philosophy -->
+            <div class="retro-card blog-intro-card">
+              <div class="card-header yellow-bg">ACERCA DE MÍ Y MI COMPUTADORA</div>
+              <p>
+                Hola a todos los internautas del ciberespacio. Me compré un ordenador porque Springfield se quedó sin electricidad y la televisión no encendía. Luego descubrí que podía apretar botones y salían dibujos que se mueven gratis.
+              </p>
+              <p>
+                <strong>Mis comidas favoritas:</strong> Chuletas de cerdo, donuts, cerveza Duff, y cualquier cosa que deje caer el abuelo al suelo.
+              </p>
+              <p class="blink red-text">
+                👉 ¿Tienes chismes jugosos sobre Springfield? <a href="#" id="linkToMrX">¡Haz clic aquí para visitar mi alter ego secreto Mr. X!</a>
+              </p>
+            </div>
+
+          </section>
+
+          <!-- Right Column: Dancing Baby, Mailbox, Badges -->
+          <aside class="grid-col col-right">
+
+            <!-- The Dancing Baby (Ally McBeal style 90s meme) -->
+            <div class="retro-card baby-card">
+              <div class="card-header cyan-bg">BEBÉ BAILADOR 3D (1996)</div>
+              <div class="dancing-baby-box">
+                <div class="baby-sprite">👶</div>
+                <div class="musical-notes">🎵 Ooga Chaka Ooga Ooga 🎵</div>
+              </div>
+            </div>
+
+            <!-- Animated Mailbox -->
+            <div class="retro-card mail-card">
+              <div class="card-header purple-bg">¡MÁNDAME UN E-MAIL!</div>
+              <div class="animated-mailbox">
+                <div class="mail-envelope fly1">✉️</div>
+                <div class="mail-envelope fly2">✉️</div>
+                <div class="mailbox-icon">📫</div>
+              </div>
+              <a href="mailto:chunkylover53@aol.com" class="retro-email-link">
+                chunkylover53@aol.com
+              </a>
+              <span class="subtext">(Escríbeme, no le digas a Marge)</span>
+            </div>
+
+            <!-- Spinning Dollar & World -->
+            <div class="retro-card spin-card">
+              <div class="card-header orange-bg">EL CIBERMUNDO</div>
+              <div class="spinning-icons">
+                <span class="spin-icon">🌍</span>
+                <span class="spin-icon spin-reverse">💰</span>
+                <span class="spin-icon">🍩</span>
+              </div>
+            </div>
+
+            <!-- 90s Web Badges -->
+            <div class="retro-card badges-card">
+              <div class="card-header">SELLOS DE CALIDAD</div>
+              <div class="badges-grid">
+                <div class="badge-item netscape-badge">BEST VIEWED WITH<br><strong>Netscape 3.0</strong></div>
+                <div class="badge-item ie-badge">MICROSOFT<br><strong>Internet Explorer 4.0</strong></div>
+                <div class="badge-item resolution-badge">OPTIMIZED FOR<br><strong>800 x 600</strong></div>
+                <div class="badge-item notepad-badge">MADE WITH<br><strong>NOTEPAD</strong></div>
+              </div>
+            </div>
+
+          </aside>
+
+        </main>
+
+        <!-- Hit Counter & Guestbook Footer -->
+        <footer class="homer-footer">
+          <div class="visitor-counter-box" title="¡Haz clic para aumentar el contador de visitas!">
+            <span class="counter-label">ERES EL VISITANTE NÚMERO:</span>
+            <div class="odometer" id="hitCounter">
+              <span class="digit">0</span>
+              <span class="digit">0</span>
+              <span class="digit">0</span>
+              <span class="digit">0</span>
+              <span class="digit">0</span>
+              <span class="digit">0</span>
+              <span class="digit">1</span>
+            </div>
+            <span class="counter-note">(Todos los clics fueron míos - Haz clic para sumar visitas)</span>
+          </div>
+
+          <div class="guestbook-section">
+            <button class="guestbook-btn" id="btnOpenGuestbook">📖 ¡Firmar el Libro de Visitas de Homer! (Guestbook)</button>
+          </div>
+
+          <div class="footer-fineprint">
+            © 2000 Homer J. Simpson Inc. Springfield, USA. Todos los derechos reservados... o lo que sea.
+          </div>
+        </footer>
+
+      </div>
+
+
+      <!-- ============================================== -->
+      <!-- SECTION 2: MR. X'S WEB PAGE (THE PULITZER BLOG) -->
+      <!-- ============================================== -->
+      <div id="mrxPage" class="hidden-page mrx-theme">
+        
+        <!-- Mr. X Header -->
+        <header class="mrx-header">
+          <div class="pulitzer-badge">
+            <div class="medal-gold">🥇</div>
+            <span>GANADOR DEL PREMIO PULITZER<br>DE PERIODISMO EN EL CIBERESPACIO</span>
+          </div>
+
+          <div class="mrx-titles">
+            <h1 class="mrx-title-main">MR. X'S WEB PAGE</h1>
+            <h2 class="mrx-slogan">"ALL THE MUCK THAT'S FIT TO RAKE"</h2>
+            <p class="mrx-sub-slogan"><em>("Toda la porquería lista para ser aireada")</em></p>
+          </div>
+
+          <div class="mrx-silhouette-box">
+            <div class="silhouette-avatar">🕵️‍♂️</div>
+            <div class="classified-tag">CONFIDENCIAL</div>
+          </div>
+        </header>
+
+        <!-- Navigation bar inside Mr X -->
+        <div class="mrx-nav">
+          <button class="mrx-nav-btn active">📰 EXCLUSIVAS Y ESCÁNDALOS</button>
+          <button class="mrx-nav-btn" id="btnTips">✉️ ENVIAR PISTA ANÓNIMA</button>
+          <button class="mrx-nav-btn danger" id="btnIslandAlert">🏝️ ALERTA: LA ISLA</button>
+          <button class="mrx-nav-btn back-to-homer" id="btnReturnHomer">🔙 Volver a la página de Homer</button>
+        </div>
+
+        <!-- Mr X News Feed -->
+        <main class="mrx-feed">
+          
+          <!-- Contenedor dinámico para filtraciones publicadas por los usuarios -->
+          <div id="mrxPublishedLeaks" class="mrx-published-leaks"></div>
+          
+          <!-- Scandal 1: Mayor Quimby's Secret Pool -->
+          <article class="mrx-article hot-story">
+            <div class="article-meta">
+              <span class="tag leak">¡¡GRAN EXCLUSIVA!!</span>
+              <span class="date">Publicado por Mr. X - Springfield</span>
+            </div>
+            <h3>¡EL ALCALDE QUIMBY DESVÍA EL DINERO DE LOS BACHES PARA CONSTRUIR UNA PISCINA PRIVADA!</h3>
+            <p class="article-body">
+              Mientras las calles de Springfield destrozan las suspensiones de los coches de los contribuyentes, Mr. X ha descubierto fotos exclusivas del Alcalde Joe Quimby nadando en una lujosa piscina olímpica construida bajo el suelo del Ayuntamiento. ¡Incluso tiene un delfín amaestrado!
+            </p>
+            <div class="article-footer">
+              <span class="verdict">Veredicto de Mr. X: 100% Verídico. Fuentes infantiles anónimas confirmadas.</span>
+            </div>
+          </article>
+
+          <!-- Scandal 2: Flu Shots Mind Control -->
+          <article class="mrx-article conspiracy-story">
+            <div class="article-meta">
+              <span class="tag conspiracy">TEORÍA DE CONSPIRACIÓN</span>
+              <span class="date">Primicia de última hora</span>
+            </div>
+            <h3>¿LAS VACUNAS DE LA GRIPE CONTIENEN UN SUERO DE CONTROL MENTAL?</h3>
+            <p class="article-body">
+              Cuando el abuelo me dijo que el gobierno escuchaba sus pensamientos a través de los empastes dentales, me reí. Pero ahora Mr. X tiene pruebas irrefutables: las vacunas de la gripe son suministradas por una corporación secreta para que todos compremos adornos navideños en noviembre.
+            </p>
+            <div class="article-footer">
+              <span class="verdict">Veredicto de Mr. X: ¡Cuestiona la realidad! Ellos están vigilando.</span>
+            </div>
+          </article>
+
+          <!-- Scandal 3: Duff Beer Secret Formula -->
+          <article class="mrx-article">
+            <div class="article-meta">
+              <span class="tag shock">ESCÁNDALO INDUSTRIAL</span>
+            </div>
+            <h3>LA CERVEZA DUFF REGULAR Y LA CERVEZA DUFF LITE SALEN DEL MISMO TUBO</h3>
+            <p class="article-body">
+              Una inspección no autorizada a las instalaciones de la Cervecería Duff revela que Duff Regular, Duff Lite y Duff Dry fluyen simultáneamente desde un único barril oxidado con tres etiquetas diferentes.
+            </p>
+          </article>
+
+          <!-- Scandal 4: Chief Wiggum Bribes -->
+          <article class="mrx-article">
+            <div class="article-meta">
+              <span class="tag corruption">CORRUPCIÓN POLICIAL</span>
+            </div>
+            <h3>EL JEFE WIGGUM ACEPTA SOBORNOS EN FORMA DE BOLLERÍA RELLENA</h3>
+            <p class="article-body">
+              Fuentes en el calabozo confirman que cualquier multa de exceso de velocidad puede anularse con una docena de donuts glaseados y una caja de buñuelos de crema.
+            </p>
+          </article>
+
+          <!-- Form: Submit Tips to Mr. X -->
+          <section class="mrx-tips-box" id="tipsSection">
+            <h4>🕵️ ¿Tienes un secreto que desvelar? Envía tu pista a Mr. X</h4>
+            <div class="tip-form">
+              <input type="text" id="tipAuthor" placeholder="Tu nombre falso o 'Garganta Profunda' (opcional)" class="mrx-input">
+              <input type="text" id="tipTitle" placeholder="Titular del escándalo (ej: ¡El Sr. Burns roba los donuts de la central!)" class="mrx-input">
+              <textarea id="tipContent" placeholder="Escribe aquí el escándalo de Springfield (Mr. X lo publicará de inmediato en portada sin verificar)..." class="mrx-textarea"></textarea>
+              <button class="mrx-submit-btn" id="btnSendTip">📤 Publicar Filtración en Mr. X</button>
+            </div>
+            <div id="tipResponse" class="tip-alert-msg hidden"></div>
+          </section>
+
+        </main>
+
+        <footer class="mrx-footer">
+          <p>"La verdad os hará libres... o hará que os rapten hombres en bata blanca."</p>
+          <p>© 2000 The Mr. X Cyberspace Bulletin. Pulitzers ganados: 1. Disfraces de incógnito usados: 1.</p>
+        </footer>
+
+      </div>
+
+    </div>
+
+    <!-- Browser Status Bar -->
+    <div class="browser-statusbar">
+      <span class="status-doc" id="statusMessage">Document: Done (Conexión por módem 56k activa)</span>
+      <span class="status-zone">Internet Zone</span>
+    </div>
+  </div>
+
+
+  <!-- MODAL: Guestbook Modal -->
+  <div class="modal-overlay hidden" id="guestbookModal">
+    <div class="retro-dialog">
+      <div class="dialog-titlebar">
+        <span>Libro de Visitas de Homer - Netscape Navigator</span>
+        <button class="dialog-close-btn" id="btnCloseGuestbook">✕</button>
+      </div>
+      <div class="dialog-content">
+        <h3>📖 Firmas en el Libro de Visitas:</h3>
+        
+        <div class="guestbook-entries" id="guestbookEntriesList">
+          <div class="gb-entry">
+            <strong>Ned Flanders:</strong> ¡Hola holita, vecino! Gran página web. Aunque ese baile de Jesús me parece un poquitín pagano, ¡pero que Dios te bendiga el módem!
+          </div>
+          <div class="gb-entry">
+            <strong>Moe Szyslak:</strong> Homer, quita esa foto mía durmiendo detrás de la barra o te juro que le daré a tu ordenador con una palanca.
+          </div>
+          <div class="gb-entry">
+            <strong>El Tipo de la Tienda de Cómics:</strong> El peor... sitio web... de la historia. Ni un solo gif está optimizado y el HTML carece de sintaxis semántica. Una estrella.
+          </div>
+          <div class="gb-entry">
+            <strong>Barney Gumble:</strong> *¡Eeeerupto!* ¿Aquí es donde se pide la pizza por cable?
+          </div>
+        </div>
+
+        <div class="add-signature-form">
+          <h4>Añade tu firma:</h4>
+          <input type="text" id="gbNameInput" placeholder="Tu nombre..." class="dialog-input">
+          <input type="text" id="gbMsgInput" placeholder="Tu mensaje para Homer..." class="dialog-input">
+          <button class="win-dialog-btn" id="btnAddSignature">✍️ ¡Firmar!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: The Island Rover Alert (Parody of Season 12 Ep 6 ending) -->
+  <div class="island-overlay hidden" id="islandAlertModal">
+    <div class="island-warning-box">
+      <div class="island-title">🚨 ALERTA DE SEGURIDAD MÁXIMA 🚨</div>
+      <div class="rover-balloon">⚪</div>
+      <p><strong>¡HAS DESCUBIERTO DEMASIADO SOBRE SPRINGFIELD!</strong></p>
+      <p>Un gas anestesiante y un globo gigante te trasladarán inmediatamente a <em>"La Isla"</em> (The Island) junto al Número 6.</p>
+      <div class="island-buttons">
+        <button class="island-escape-btn" id="btnEscapeIsland">💉 Despertar en el sofá de los Simpson</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio synthesizers and main scripts -->
+  <script src="audio.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
