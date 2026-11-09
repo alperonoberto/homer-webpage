@@ -3,7 +3,7 @@
 
 Recreación interactiva y fiel de la legendaria página web de Homer Simpson del capítulo 6 de la temporada 12 de *Los Simpson* ("El ordenador que acabó con Homer" / "El conejillo de indias cibernético").
 
-[URL a la página web]([https://ejemplo.com](https://leeward-orca-ettt2.ship.place/))
+[URL a la página web](https://ejemplo.com](https://leeward-orca-ettt2.ship.place/))
 
 <img width="1920" height="910" alt="{8320CD26-BED5-4A3A-AD3A-52FA0C905779}" src="https://github.com/user-attachments/assets/9b063bd0-080c-4ef0-8d98-b83127e9f388" />
 
