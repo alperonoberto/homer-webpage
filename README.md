@@ -48,12 +48,3 @@ Recreación interactiva y fiel de la legendaria página web de Homer Simpson del
 - Huevo de Pascua: Botón **"Alerta: La Isla"**, que despliega el globo gigante blanco Rover de *The Prisoner* que secuestra a Homer al final del episodio.
 
 ---
-
-## 🚀 Cómo abrir la página
-
-Simplemente abre el archivo `index.html` en cualquier navegador web moderno (Chrome, Firefox, Edge, Safari):
-
-```bash
-# Ubicación del proyecto:
-C:\Users\eLearning\.gemini\antigravity\scratch\homer-webpage\index.html
-```
